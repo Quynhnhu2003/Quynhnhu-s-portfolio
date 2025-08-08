@@ -1,0 +1,16 @@
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &__tilte {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+}

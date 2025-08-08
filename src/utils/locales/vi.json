@@ -1,0 +1,122 @@
+{
+  "navbar": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "resume": "Hồ sơ",
+    "skill": "Kỹ năng",
+    "contact": "Liên hệ"
+  },
+  "home": {
+    "greeting": "Phạm Nguyễn Quỳnh Như",
+    "description": "Tôi là một lập trình viên Frontend. React | Typescript",
+    "download_cv": "Tải CV"
+  },
+  "about": {
+    "title": "Giới thiệu bản thân",
+    "bio": "Em mong muốn phát triển vững chắc trong vai trò là một Lập trình viên Frontend trẻ, luôn nỗ lực học hỏi và đóng góp tích cực trong lĩnh vực phát triển web. Tôi hy vọng có cơ hội trau dồi kỹ năng, làm việc cùng những đội nhóm tài năng và tham gia vào các dự án sáng tạo, với mục tiêu lâu dài là trở thành một chuyên gia frontend được tin tưởng và đánh giá cao.",
+    "information": [
+      {
+        "id": 1,
+        "title": "Ngày sinh",
+        "content": "14/06/2003"
+      },
+      {
+        "id": 2,
+        "title": "Số điện thoại",
+        "content": "0706412609"
+      },
+      {
+        "id": 3,
+        "title": "Thành phố",
+        "content": "TP. Hồ Chí Minh, Việt Nam"
+      },
+      {
+        "id": 4,
+        "title": "Tuổi",
+        "content": "22"
+      },
+      {
+        "id": 5,
+        "title": "Bằng cấp",
+        "content": "Cử nhân Công nghệ Thông tin"
+      },
+      {
+        "id": 6,
+        "title": "Email",
+        "content": "nhu24icloud@gmail.com"
+      },
+      {
+        "id": 7,
+        "title": "Freelance",
+        "content": "Sẵn sàng nhận việc"
+      }
+    ]
+  },
+  "resume": {
+    "title": "Hồ sơ",
+    "bio": "Junior Frontend Developer với nền tảng vững chắc về HTML,CSS, JavaScript và React. Từng thực hiện các dự án web thực tế và luôn sẵn sàng học hỏi, cải thiện kỹ năng để đóng góp vào các sản phẩm web hiện đại",
+    "listResume": [
+      {
+        "id": "resume001",
+        "header": "Học vấn",
+        "list_item": [
+          {
+            "id": "item01",
+            "title": "Cử nhân Công nghệ Thông tin",
+            "yearStart": "2021",
+            "yearEnd": "2025",
+            "location": {
+              "title": "Đại học Greenwich",
+              "address": "Đường Cộng Hòa, Quận Tân Bình, TP. Hồ Chí Minh"
+            }
+          }
+        ]
+      },
+      {
+        "id": "resume002",
+        "header": "Kinh nghiệm chuyên môn",
+        "list_item": [
+          {
+            "id": "project01",
+            "title": "Tạp chí trường đại học",
+            "yearStart": "10/01/2024",
+            "yearEnd": "26/04/2024",
+            "location": {
+              "title": "https://github.com/TrongPhat14/WebTeam"
+            },
+            "position": "Frontend Developer"
+          },
+          {
+            "id": "project02",
+            "title": "Book Store",
+            "yearStart": "07/11/2023",
+            "yearEnd": "21/12/2023",
+            "location": {
+              "title": "https://github.com/Quynhnhu2003/FPTBookWebApplication.git"
+            },
+            "position": "Leader, Frontend Developer"
+          }
+        ]
+      }
+    ]
+  },
+  "skill": {
+    "title": "Kỹ năng",
+    "listSkill": [
+      { "id": "skill01", "name": "Tiếng anh", "point": 65 },
+      { "id": "skill02", "name": "HTML", "point": 80 },
+      { "id": "skill03", "name": "CSS/SCSS", "point": 90 },
+      { "id": "skill04", "name": "Javascript", "point": 70 },
+      { "id": "skill05", "name": "ReactJs (TypeScript)", "point": 85 },
+      { "id": "skill06", "name": "Angular", "point": 50 }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "bio": "Nếu bạn quan tâm đến việc hợp tác, cần hỗ trợ kỹ thuật, hoặc đơn giản là muốn kết nối, đừng ngần ngại gửi cho tôi một tin nhắn. Tôi luôn sẵn sàng lắng nghe và phản hồi nhanh chóng!",
+    "contactInfor": [
+      {"id": "contact01", "title": "Địa chỉ", "content":"Phường Tân Thuận Đông, quận 7, TP.Hồ Chí Minh"},
+      {"id": "contact02", "title": "Số điện thoại", "content":"0706412609"}
+    ]
+  }
+}

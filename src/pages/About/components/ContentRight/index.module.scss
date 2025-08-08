@@ -1,0 +1,19 @@
+@import "../../../../utils/styles/colors";
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  h1 {
+    margin: 0;
+  }
+  span {
+    color: $primary-dark;
+  }
+  &__informationList {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+    gap: 3rem;
+  }
+}

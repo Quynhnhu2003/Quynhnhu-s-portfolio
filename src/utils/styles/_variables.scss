@@ -1,0 +1,13 @@
+@import 'colors';
+@import 'sizes';
+
+// Border radius
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 24px;
+
+// Shadow for glassmorphism
+$glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+// Blur for glass effect
+$glass-blur: blur(8px);

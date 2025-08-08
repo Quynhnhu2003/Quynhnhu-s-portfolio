@@ -1,0 +1,60 @@
+@import "../../utils/styles/colors";
+.resumeContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__header {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+    width: 80%;
+    p {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 160px;
+        height: 1px;
+        background: color-mix(in srgb, var(#272829), transparent 60%);
+        left: 0;
+        right: 0;
+        bottom: 1px;
+        margin: auto;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: $accent-orange;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: #272829;
+      line-height: 1.5rem;
+      text-align: justify;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    justify-content: center;
+    width: 75%;
+  }
+}

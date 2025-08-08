@@ -1,0 +1,122 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "skill": "Skill",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Phạm Nguyễn Quỳnh Như",
+    "description": "I'm a frontend developer. React | Typescript",
+    "download_cv": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "Aspire to solidify my position as a dedicated and proficient Junior Frontend Developer, committed to continuous growth and contribution within the field of web development. Seeking opportunities to refine my skills, collaborate with talented teams, and make meaningful contributions to innovative projects, with a long-term goal of becoming a respected expert in frontend development.",
+    "information": [
+      {
+        "id": 1,
+        "title": "Birthday",
+        "content": "14/06/2003"
+      },
+      {
+        "id": 2,
+        "title": "Phone",
+        "content": "0706412609"
+      },
+      {
+        "id": 3,
+        "title": "City",
+        "content": "Ho Chi Minh city, VietNam"
+      },
+      {
+        "id": 4,
+        "title": "Age",
+        "content": "22"
+      },
+      {
+        "id": 5,
+        "title": "Degree",
+        "content": "Bachelor of Information Technology"
+      },
+      {
+        "id": 6,
+        "title": "Email",
+        "content": "nhu24icloud@gmail.com"
+      },
+      {
+        "id": 7,
+        "title": "Freelance",
+        "content": "Available"
+      }
+    ]
+  },
+  "resume": {
+    "title": "Resume",
+    "bio": "Junior Frontend Developer with a solid foundation in HTML, CSS, JavaScript, and React. Experienced in real-world web projects and always eager to learn and improve to contribute to modern web products.",
+    "listResume": [
+      {
+        "id": "resume001",
+        "header": "Education",
+        "list_item": [
+          {
+            "id": "item01",
+            "title": "Bachelor of Information Technology",
+            "yearStart": "2021",
+            "yearEnd": "2025",
+            "location": {
+              "title": "University of Greenwich",
+              "address": "Cong Hoa Street, Tan Binh District, Ho Chi Minh City, Vietnam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "resume002",
+        "header": "Professional Experience",
+        "list_item": [
+          {
+            "id": "project01",
+            "title": "Magazine of University",
+            "yearStart": "10/01/2024",
+            "yearEnd": "26/04/2024",
+            "location": {
+              "title": "https://github.com/TrongPhat14/WebTeam"
+            },
+            "position": "Frontend Developer"
+          },
+          {
+            "id": "project02",
+            "title": "Book Store",
+            "yearStart": "07/11/2023",
+            "yearEnd": "21/12/2023",
+            "location": {
+              "title": "https://github.com/Quynhnhu2003/FPTBookWebApplication.git"
+            },
+            "position": "Leader, Frontend Developer"
+          }
+        ]
+      }
+    ]
+  },
+  "skill": {
+    "title": "Skill",
+    "listSkill": [
+      { "id": "skill01", "name": "English", "point": 65 },
+      { "id": "skill02", "name": "HTML", "point": 80 },
+      { "id": "skill03", "name": "CSS/SCSS", "point": 90 },
+      { "id": "skill04", "name": "Javascript", "point": 70 },
+      { "id": "skill05", "name": "ReactJs (TypeScript)", "point": 85 },
+      { "id": "skill06", "name": "Angular", "point": 50 }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "bio": "If you're interested in collaboration, need technical support, or simply want to connect, don't hesitate to drop me a message. I'm always open and responsive!",
+    "contactInfor": [
+      {"id": "contact01", "title": "Address", "content":"Tan Thuan Dong Ward, District 7, Ho Chi Minh City"},
+      {"id": "contact02", "title": "Phone", "content":"0706412609"}
+    ]
+  }
+}

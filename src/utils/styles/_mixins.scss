@@ -1,0 +1,21 @@
+// Mixin for glassmorphism card
+@mixin glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: $glass-blur;
+    -webkit-backdrop-filter: $glass-blur;
+    border-radius: $radius-md;
+    box-shadow: $glass-shadow;
+    border: 1px solid $border-color;
+  }
+  
+  // Responsive
+  @mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: 576px) { @content; }
+    } @else if $breakpoint == md {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == lg {
+      @media (max-width: 992px) { @content; }
+    }
+  }
+  
