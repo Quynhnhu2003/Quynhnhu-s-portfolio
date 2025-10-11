@@ -8,7 +8,7 @@
   },
   "home": {
     "greeting": "Phạm Nguyễn Quỳnh Như",
-    "description": "Tôi là một lập trình viên Frontend. React | Typescript",
+    "description": "Em là một lập trình viên Frontend. React | Typescript",
     "download_cv": "Tải CV"
   },
   "about": {
@@ -32,8 +32,8 @@
       },
       {
         "id": 4,
-        "title": "Tuổi",
-        "content": "22"
+        "title": "Kinh nghiệm",
+        "content": "1 năm"
       },
       {
         "id": 5,

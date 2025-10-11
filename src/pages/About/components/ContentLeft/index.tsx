@@ -6,14 +6,12 @@ import AnimatedSection from "../../../../components/Animation/AnimatedSection";
 
 function ContentLeft() {
   return (
-    <div className={styles.leftContainer}>
-      <AnimatedSection animationType="zoomIn" delay={0.3}>
-      <img
-        src={"src/pages/About/components/ContentLeft/img/quynhnhu_avatar.jpg"}
-        alt="avatar"
-      />
+      <AnimatedSection animationType="zoomIn" delay={0.3} className={styles.leftContainer}>
+        <img
+          src={"src/pages/About/components/ContentLeft/img/quynhnhu_avatar.jpg"}
+          alt="avatar"
+        />
       </AnimatedSection>
-    </div>
   );
 }
 

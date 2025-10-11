@@ -16,11 +16,6 @@
       justify-content: center;
       border-radius: 50%;
     }
-    &:first-child {
-      a {
-        padding: 0 0.5rem;
-      }
-    }
     &__content {
       display: flex;
       flex-direction: column;

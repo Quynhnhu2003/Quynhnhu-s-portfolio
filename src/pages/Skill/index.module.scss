@@ -58,5 +58,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     width: 70%;
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

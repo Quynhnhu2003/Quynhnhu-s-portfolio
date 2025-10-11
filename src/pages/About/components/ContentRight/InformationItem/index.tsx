@@ -15,17 +15,17 @@ function InformationItem({ information }: { information: informationType }) {
           version="1.1"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 330.00 330.00"
-          xml:space="preserve"
+          xmlSpace="preserve"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             stroke="#FFA951"
-            stroke-width="27.72"
+            strokeWidth="27.72"
           >
             <path
               id="XMLID_222_"

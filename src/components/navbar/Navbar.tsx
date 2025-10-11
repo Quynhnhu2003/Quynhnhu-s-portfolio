@@ -32,7 +32,7 @@ const navBarItem: navItemType[] = [
         width="24"
         height="24"
         viewBox="0 0 64 64"
-        stroke-width="3"
+        strokeWidth="3"
         stroke="#000000"
         fill="none"
       >
@@ -152,6 +152,7 @@ export default function Navbar() {
           {navBarItem &&
             navBarItem.map((i: navItemType) => (
               <li
+              key={i.id}
                 className={`${styles.navbarContainer__navmenu__list__item} ${
                   clicked === i.id && styles.active
                 }`}

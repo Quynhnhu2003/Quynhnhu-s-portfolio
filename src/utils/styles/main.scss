@@ -7,7 +7,8 @@
     background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
-    padding: 1rem;
+    margin: 0;
+    width: 100%;
   }
 
   a {
@@ -38,7 +39,8 @@
     background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
-    padding: 1rem;
+    margin: 0;
+    width: 100%;
   }
 
   a {
@@ -69,7 +71,8 @@
     background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
-    padding: 1rem;
+    margin: 0;
+    width: 100%;
   }
 
   a {
@@ -100,7 +103,8 @@
     background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
-    padding: 1rem;
+    margin: 0;
+    width: 100%;
   }
 
   a {
@@ -123,33 +127,32 @@
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  // Global styles
-  body {
-    font-family: "Poppins", sans-serif;
-    background-image: $gradient-bg;
-    transition: all 0.3s ease-in-out;
-    scroll-behavior: smooth;
-    padding: 1rem;
-  }
+// Global styles
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: $gradient-bg;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-  a {
-    color: #91c8ff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-  }
+a {
+  color: #91c8ff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
 
-  p {
-    color: $text-dark;
-    font-size: 1rem;
-    font-weight: 400;
-  }
+p {
+  color: $text-dark;
+  font-size: 1rem;
+  font-weight: 400;
+}
 
-  span {
-    color: $accent-blue;
-    font-size: 0.875rem;
-    font-weight: 400;
-  }
+span {
+  color: $accent-blue;
+  font-size: 0.875rem;
+  font-weight: 400;
 }

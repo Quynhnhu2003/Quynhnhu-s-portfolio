@@ -17,9 +17,9 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection animationType="slideInRight" delay={0.2}>
-      <p className={styles.homeContainer__introduction}>
-        <TypingEffect strings={[t("home.description")]} />
-      </p>
+        <p className={styles.homeContainer__introduction}>
+          <TypingEffect strings={[t("home.description")]} />
+        </p>
       </AnimatedSection>
 
       <AnimatedSection animationType="zoomIn" delay={0.3}>

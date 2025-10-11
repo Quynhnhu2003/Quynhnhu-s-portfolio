@@ -26,6 +26,12 @@ function ContactInfor({ contactList }: { contactList: contactInforType[] }) {
                   }
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={
+                    (contact.title === "Address" || contact.title === "Địa chỉ")
+                      ? { padding: '0 0.5rem' }
+                      : {}
+                  }
+                  
                 >
                   {contact.title === "Address" ||
                   contact.title === "Địa chỉ" ? (
@@ -44,11 +50,11 @@ function ContactInfor({ contactList }: { contactList: contactInforType[] }) {
                       xmlns:svg="http://www.w3.org/2000/svg"
                       fill="#000000"
                     >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         <defs id="defs2"></defs>

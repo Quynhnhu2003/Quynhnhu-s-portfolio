@@ -16,15 +16,13 @@ function ContentRight({ information }: { information: informationType[] }) {
         eligendi molestias, quam possimus quasi officia maxime nobis laudantium
         quo quas!
       </span>
-      <AnimatedSection animationType="staggerContainer">
-      <div className={styles.rightContainer__informationList}>
+      <AnimatedSection animationType="staggerContainer" className={styles.rightContainer__informationList}>
         {information &&
           information.map((item: informationType, index:number) => (
             <AnimatedSection key={item.id} animationType="fadeInUp" delay={index * 0.15}>
             <InformationItem key={item.id} information={item} />
           </AnimatedSection>
           ))}
-      </div>
       </AnimatedSection>
     </div>
   );

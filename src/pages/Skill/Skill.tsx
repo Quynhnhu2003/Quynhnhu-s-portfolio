@@ -19,16 +19,14 @@ function Skill() {
         <p>{t("skill.title")}</p>
       </div>
 
-      <div className={styles.skillContainer__listSkill}>
-      <AnimatedSection animationType="staggerContainer">
-        {listSkill &&
-          listSkill.map((skill: skillItemType, index:number) => (
-            <AnimatedSection animationType="zoomIn" delay={index * 0.1} key={skill.name}>
-            <SkillItem item={skill} key={skill.id} />
-            </AnimatedSection>
-          ))}
-          </AnimatedSection>
-      </div>
+        <AnimatedSection animationType="staggerContainer" className={styles.skillContainer__listSkill}>
+          {listSkill &&
+            listSkill.map((skill: skillItemType, index:number) => (
+              <AnimatedSection animationType="zoomIn" delay={index * 0.1} key={skill.name}>
+                <SkillItem item={skill} key={skill.id} />
+              </AnimatedSection>
+            ))}
+        </AnimatedSection>
     </section>
   );
 }
