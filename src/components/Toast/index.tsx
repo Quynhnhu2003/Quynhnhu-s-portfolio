@@ -1,6 +1,3 @@
-// *** Style Import
-import styles from "./index.module.scss";
-
 // ** Another Import
 import { Toaster } from "react-hot-toast";
 
