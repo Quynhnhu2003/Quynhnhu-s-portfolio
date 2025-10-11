@@ -9,7 +9,7 @@ function ContentLeft() {
       <AnimatedSection animationType="zoomIn" delay={0.3} className={styles.leftContainer}>
         <img
           src={"https://res.cloudinary.com/dwcg5odh2/image/upload/v1760165778/quynhnhu_avatar_lew4p9.jpg"}
-          alt="avatar"
+          alt="Quynhnhhu's avatar"
         />
       </AnimatedSection>
   );
