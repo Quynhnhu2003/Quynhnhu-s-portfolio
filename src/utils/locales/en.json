@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "Aspire to solidify my position as a dedicated and proficient Junior Frontend Developer, committed to continuous growth and contribution within the field of web development. Seeking opportunities to refine my skills, collaborate with talented teams, and make meaningful contributions to innovative projects, with a long-term goal of becoming a respected expert in frontend development.",
+    "bio": "Frontend Developer Intern with practical experience in building scalable web applications using ReactJS (TypeScript) and Angular within Agile environments. Skilled in component-based architecture, UI performance optimization, and responsive design. Aim to build advanced front-end development expertise through hands-on projects, with a clear goal of progressing into a Full-Stack Developer position supporting large-scale SaaS platforms.",
     "information": [
       {
         "id": 1,
@@ -78,23 +78,28 @@
         "list_item": [
           {
             "id": "project01",
-            "title": "Magazine of University",
-            "yearStart": "10/01/2024",
-            "yearEnd": "26/04/2024",
+            "title": "Internal Projects – Technology Apprenticeship Program (01/2025)",
+            "yearStart": "01/2025",
+            "yearEnd": "12/2025",
             "location": {
-              "title": "https://github.com/TrongPhat14/WebTeam"
+              "title1": "Contributed to the development of 3 enterprise-level internal systems using ReactJS (TypeScript) and Angular within an Agile Scrum environment, enhancing workflow efficiency and user satisfaction through improved UI performance and reusable component architecture.",
+              "title2": "Built 12+ reusable components, optimized rendering for 25% faster load times, and collaborated with backend teams on RESTful API integration.",
+              "title3": "Applied Git flow, code review, and testing best practices in real-world SaaS development."
             },
-            "position": "Frontend Developer"
+            "tech": "ReactJS, TypeScript, Angular, REST API, GitLab, WebSocket, SignalR",
+            "position": "Frontend Developer Intern"
           },
           {
             "id": "project02",
-            "title": "Book Store",
-            "yearStart": "07/11/2023",
-            "yearEnd": "21/12/2023",
+            "title": "University Magazine Website",
+            "yearStart": "01/2024",
+            "yearEnd": "04/2024",
             "location": {
-              "title": "https://github.com/Quynhnhu2003/FPTBookWebApplication.git"
+              "title1": "Collaborated in a 6-member Agile Scrum team to develop a university digital magazine platform.",
+              "title2": "Designed and implemented responsive layouts and interactive features, enhancing content accessibility and user engagement by 15%."
             },
-            "position": "Leader, Frontend Developer"
+            "tech": "HTML, CSS, Bootstrap 5, JavaScript, jQuery, C#",
+            "position": "Frontend Developer | Agile Scrum Environment"
           }
         ]
       }
@@ -104,11 +109,19 @@
     "title": "Skill",
     "listSkill": [
       { "id": "skill01", "name": "English", "point": 65 },
-      { "id": "skill02", "name": "HTML", "point": 80 },
+      { "id": "skill02", "name": "HTML5", "point": 80 },
       { "id": "skill03", "name": "CSS/SCSS", "point": 90 },
-      { "id": "skill04", "name": "Javascript", "point": 70 },
+      { "id": "skill04", "name": "JavaScript (ES6+)", "point": 70 },
       { "id": "skill05", "name": "ReactJs (TypeScript)", "point": 85 },
-      { "id": "skill06", "name": "Angular", "point": 50 }
+      { "id": "skill06", "name": "Angular", "point": 50 },
+      { "id": "skill07", "name": "Redux", "point": 50 },
+      { "id": "skill08", "name": "TailwindCSS", "point": 50 },
+      { "id": "skill09", "name": "Bootstrap 5", "point": 90 },
+      { "id": "skill10", "name": "Git/GitHub", "point": 80 },
+      { "id": "skill11", "name": "VSCode", "point": 80 },
+      { "id": "skill12", "name": "Figma", "point": 80 },
+      { "id": "skill13", "name": "Clean Code", "point": 80 },
+      { "id": "skill14", "name": "RESTful API Integration", "point": 70 }
     ]
   },
   "contact": {

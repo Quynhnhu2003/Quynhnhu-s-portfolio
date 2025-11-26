@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Giới thiệu bản thân",
-    "bio": "Em mong muốn phát triển vững chắc trong vai trò là một Lập trình viên Frontend trẻ, luôn nỗ lực học hỏi và đóng góp tích cực trong lĩnh vực phát triển web. Tôi hy vọng có cơ hội trau dồi kỹ năng, làm việc cùng những đội nhóm tài năng và tham gia vào các dự án sáng tạo, với mục tiêu lâu dài là trở thành một chuyên gia frontend được tin tưởng và đánh giá cao.",
+    "bio": "Thực tập sinh Frontend Developer với kinh nghiệm thực tế trong việc xây dựng các ứng dụng web có khả năng mở rộng bằng ReactJS (TypeScript) và Angular trong môi trường Agile. Thành thạo kiến trúc hướng component, tối ưu hiệu suất giao diện và thiết kế responsive. Mục tiêu phát triển chuyên môn nâng cao về front-end thông qua các dự án thực tiễn, với định hướng rõ ràng trở thành Full-Stack Developer hỗ trợ các nền tảng SaaS quy mô lớn.",
     "information": [
       {
         "id": 1,
@@ -78,23 +78,28 @@
         "list_item": [
           {
             "id": "project01",
-            "title": "Tạp chí trường đại học",
-            "yearStart": "10/01/2024",
-            "yearEnd": "26/04/2024",
+            "title": "Dự án Nội Bộ – Chương Trình Technology Apprenticeship (01/2025)",
+            "yearStart": "01/2025",
+            "yearEnd": "12/2025",
             "location": {
-              "title": "https://github.com/TrongPhat14/WebTeam"
+              "title1": "Đóng góp vào việc phát triển 3 hệ thống nội bộ cấp doanh nghiệp bằng ReactJS (TypeScript) và Angular trong môi trường Agile Scrum, cải thiện hiệu quả quy trình làm việc và mức độ hài lòng của người dùng thông qua việc nâng cao hiệu suất giao diện và xây dựng kiến trúc component tái sử dụng.",
+              "title2": "Xây dựng hơn 12 component tái sử dụng, tối ưu hóa quá trình render giúp tăng 25% tốc độ tải trang và phối hợp với đội backend trong việc tích hợp RESTful API.",
+              "title3": "Áp dụng Git flow, quy trình review code và các best practice kiểm thử trong quá trình phát triển SaaS thực tế."
             },
-            "position": "Frontend Developer"
+            "tech": "ReactJS, TypeScript, Angular, REST API, GitLab, WebSocket, SignalR",
+            "position": "Frontend Developer Intern"
           },
           {
             "id": "project02",
-            "title": "Book Store",
-            "yearStart": "07/11/2023",
-            "yearEnd": "21/12/2023",
+            "title": "Website Tạp Chí Trường Đại Học",
+            "yearStart": "01/2024",
+            "yearEnd": "04/2024",
             "location": {
-              "title": "https://github.com/Quynhnhu2003/FPTBookWebApplication.git"
+              "title1": "Hợp tác trong nhóm 6 thành viên theo mô hình Agile Scrum để phát triển nền tảng tạp chí số của trường đại học.",
+              "title2": "Thiết kế và triển khai giao diện responsive cùng các tính năng tương tác, giúp cải thiện khả năng truy cập nội dung và tăng 15% mức độ tương tác của người dùng."
             },
-            "position": "Leader, Frontend Developer"
+            "tech": "HTML, CSS, Bootstrap 5, JavaScript, jQuery, C#",
+            "position": "Frontend Developer | Môi Trường Agile Scrum"
           }
         ]
       }
@@ -115,8 +120,12 @@
     "title": "Contact Me",
     "bio": "Nếu bạn quan tâm đến việc hợp tác, cần hỗ trợ kỹ thuật, hoặc đơn giản là muốn kết nối, đừng ngần ngại gửi cho tôi một tin nhắn. Tôi luôn sẵn sàng lắng nghe và phản hồi nhanh chóng!",
     "contactInfor": [
-      {"id": "contact01", "title": "Địa chỉ", "content":"Phường Tân Thuận Đông, quận 7, TP.Hồ Chí Minh"},
-      {"id": "contact02", "title": "Số điện thoại", "content":"0706412609"}
+      {
+        "id": "contact01",
+        "title": "Địa chỉ",
+        "content": "Phường Tân Thuận Đông, quận 7, TP.Hồ Chí Minh"
+      },
+      { "id": "contact02", "title": "Số điện thoại", "content": "0706412609" }
     ]
   }
 }

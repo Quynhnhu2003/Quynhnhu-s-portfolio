@@ -15,4 +15,5 @@ export type itemType = {
   };
   position?: string;
   detailsProject?: string;
+  tech:string
 };

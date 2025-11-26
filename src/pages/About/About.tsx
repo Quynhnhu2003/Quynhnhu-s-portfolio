@@ -1,12 +1,12 @@
 // ** Styles Import
+import styles from "./index.module.scss";
+
+// ** Another Import
 import { useTranslation } from "react-i18next";
 import ContentLeft from "./components/ContentLeft";
 import ContentRight from "./components/ContentRight";
-import styles from "./index.module.scss";
 import type { informationType } from "../../utils/type";
 import AnimatedSection from "../../components/Animation/AnimatedSection";
-
-// ** Another Import
 
 function About() {
   const { t } = useTranslation();
