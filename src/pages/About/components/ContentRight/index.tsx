@@ -10,12 +10,6 @@ function ContentRight({ information }: { information: informationType[] }) {
   return (
     <div className={styles.rightContainer}>
       <h1>Frontend Developer</h1>
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi
-        laboriosam! Dolore sunt magni eaque asperiores adipisci autem sint
-        eligendi molestias, quam possimus quasi officia maxime nobis laudantium
-        quo quas!
-      </span>
       <AnimatedSection animationType="staggerContainer" className={styles.rightContainer__informationList}>
         {information &&
           information.map((item: informationType, index:number) => (

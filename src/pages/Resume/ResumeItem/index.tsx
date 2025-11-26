@@ -17,12 +17,16 @@ function ResumeItem({ item }: { item: resumeItemType }) {
               {i.yearStart} - {i.yearEnd}
             </h5>
             <p className={styles.resume__item__content}>
-              {i.location.title}
+              {i.location &&
+                Object.entries(i.location).map(([key, value], index) => (
+                  <em key={key + ' - ' +index}>{value}</em>
+                ))}{" "}
               {i.location.address && <em>{i.location.address}</em>}
             </p>
             {i.detailsProject && (
               <p className={styles.resume__item__content}>{i.location.title}</p>
             )}
+            <p className={styles.resume__item__content}><strong>Tech:</strong>{i.tech}</p>
           </div>
         ))}
     </div>

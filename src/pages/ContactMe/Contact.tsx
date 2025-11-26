@@ -15,7 +15,7 @@ function ContactMe() {
   }) as contactInforType[];
 
   return (
-      <section className={styles.contactContainer}>
+    <section className={styles.contactContainer} id={"contact"}>
       <div className={styles.contactContainer__header}>
         <p>{t("contact.title")}</p>
         <span>{t("contact.bio")}</span>
