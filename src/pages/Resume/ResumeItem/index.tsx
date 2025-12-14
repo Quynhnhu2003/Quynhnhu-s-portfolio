@@ -13,20 +13,29 @@ function ResumeItem({ item }: { item: resumeItemType }) {
         item.list_item.map((i: itemType) => (
           <div key={i.id} className={styles.resume__item}>
             <h4 className={styles.resume__item__title}>{i.title}</h4>
-            <h5>
-              {i.yearStart} - {i.yearEnd}
-            </h5>
+            <h5>{i.yearStart ? `${i.yearStart} - ${i.yearEnd}` : i.yearEnd}</h5>
+
             <p className={styles.resume__item__content}>
-              {i.location &&
-                Object.entries(i.location).map(([key, value], index) => (
-                  <em key={key + ' - ' +index}>{value}</em>
-                ))}{" "}
-              {i.location.address && <em>{i.location.address}</em>}
+              {i.location?.title && <em>{i.location.title}</em>}
+
+              {i.location?.title1 && <em>{i.location.title1}</em>}
+              {i.location?.title2 && <em>{i.location.title2}</em>}
+              {i.location?.title3 && <em>{i.location.title3}</em>}
+
+              {i.location?.address && (
+                <em className={styles.resume__item__address}>
+                  {i.location.address}
+                </em>
+              )}
             </p>
+
             {i.detailsProject && (
               <p className={styles.resume__item__content}>{i.location.title}</p>
             )}
-            <p className={styles.resume__item__content}><strong>Tech:</strong>{i.tech}</p>
+            {i.tech && <p className={styles.resume__item__content}>
+              <strong>Tech:</strong>
+              {i.tech}
+            </p>}
           </div>
         ))}
     </div>

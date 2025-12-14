@@ -69,13 +69,36 @@
               "title": "Đại học Greenwich",
               "address": "Đường Cộng Hòa, Quận Tân Bình, TP. Hồ Chí Minh"
             }
-          }
+          },
+          {
+            "id": "item02",
+            "title": "Chứng chỉ năng lực tiếng Anh VSTEP (B1)",
+            "yearStart": "2024",
+            "yearEnd": "2024",
+            "location": {
+              "title": "Kỳ thi Đánh giá năng lực tiếng Anh theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam (VSTEP)",
+              "address": "Việt Nam"
+            }
+          }          
         ]
       },
       {
         "id": "resume002",
         "header": "Kinh nghiệm chuyên môn",
         "list_item": [
+          {
+            "id": "project03",
+            "title": "Landing Page(Dự án cá nhân)",
+            "yearStart": "11/2025",
+            "yearEnd": "12/2025",
+            "location": {
+              "title1": "Thiết kế và phát triển landing page tương tác cao cho sản phẩm giáo dục, tập trung vào trải nghiệm người dùng cao cấp, animation mượt mà và giao diện responsive trên nhiều thiết bị.",
+              "title2": "Xây dựng hệ thống điều hướng theo scroll với hiệu ứng chuyển động mượt, tự động xác định section đang active và underline animation bằng IntersectionObserver và Framer Motion.",
+              "title3": "Tự xây dựng hiệu ứng light trail theo con trỏ chuột bằng SVG curve, theo dõi chuột thời gian thực và tối ưu hiệu năng để tăng tính trực quan và trải nghiệm người dùng."
+            },
+            "tech": "Next.js, ReactJS, TypeScript, Tailwind CSS, Framer Motion, IntersectionObserver API",
+            "position": "Lập trình viên Frontend"
+          },
           {
             "id": "project01",
             "title": "Dự án Nội Bộ – Chương Trình Technology Apprenticeship (01/2025)",

@@ -69,13 +69,37 @@
               "title": "University of Greenwich",
               "address": "Cong Hoa Street, Tan Binh District, Ho Chi Minh City, Vietnam"
             }
+          },
+          {
+            "id": "item02",
+            "title": "English Proficiency Certificate – VSTEP (B1)",
+            "yearStart": "2024",
+            "yearEnd": "2024",
+            "location": {
+              "title": "Vietnamese Standardized Test of English Proficiency (VSTEP)",
+              "address": "Issued in Vietnam"
+            }
           }
+          
         ]
       },
       {
         "id": "resume002",
         "header": "Professional Experience",
         "list_item": [
+          {
+            "id": "project03",
+            "title": "Landing Page (Personal Project)",
+            "yearStart": "01/12/2025",
+            "yearEnd": "14/12/2025",
+            "location": {
+              "title1": "Designed and developed a high-end interactive landing page for an education-focused product, emphasizing smooth animations, responsive layout, and premium UI/UX experience.",
+              "title2": "Implemented advanced scroll-based navigation with active section tracking, smooth scrolling behavior, and animated underline indicators using IntersectionObserver and Framer Motion.",
+              "title3": "Built custom cursor light-trail effects with SVG Bézier curves, real-time mouse tracking, and performance-optimized rendering to enhance visual engagement."
+            },
+            "tech": "Next.js, ReactJS, TypeScript, Tailwind CSS, Framer Motion, IntersectionObserver API",
+            "position": "Frontend Developer"
+          },
           {
             "id": "project01",
             "title": "Internal Projects – Technology Apprenticeship Program (01/2025)",
@@ -128,8 +152,12 @@
     "title": "Contact Me",
     "bio": "If you're interested in collaboration, need technical support, or simply want to connect, don't hesitate to drop me a message. I'm always open and responsive!",
     "contactInfor": [
-      {"id": "contact01", "title": "Address", "content":"Tan Thuan Dong Ward, District 7, Ho Chi Minh City"},
-      {"id": "contact02", "title": "Phone", "content":"0706412609"}
+      {
+        "id": "contact01",
+        "title": "Address",
+        "content": "Tan Thuan Dong Ward, District 7, Ho Chi Minh City"
+      },
+      { "id": "contact02", "title": "Phone", "content": "0706412609" }
     ]
   }
 }

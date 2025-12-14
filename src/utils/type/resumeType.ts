@@ -10,9 +10,12 @@ export type itemType = {
   yearStart: string;
   yearEnd: string;
   location: {
-    title: string;
+    title?: string;
+    title1?: string;
+    title2?: string;
+    title3?: string;
     address?: string;
-  };
+  };  
   position?: string;
   detailsProject?: string;
   tech:string
