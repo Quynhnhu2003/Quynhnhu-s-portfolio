@@ -3,7 +3,16 @@
 .headerContainer {
   width: 100%;
   display: flex;
+  position: fixed;
+  top: 2rem;
+  right: 2.5rem;
   justify-content: flex-end;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  &.hidden {
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+  }
   &__item {
     background-color: $border-light;
     border: none;

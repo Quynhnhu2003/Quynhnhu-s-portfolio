@@ -144,7 +144,9 @@ export default function Navbar() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [clicked, setClicked] = useState<string>("");
 
+  // ** Hooks
   const { t } = useTranslation();
+  
   return (
     <nav className={styles.navbarContainer}>
       <div className={styles.navbarContainer__navmenu}>
