@@ -26,6 +26,8 @@ function Header() {
 
   // ** function
   const handleActiveButton = (id: number, language: string) => {
+  console.log('id', id)
+  console.log('language', language)
     if (id) {
       setClick(id);
       i18n.changeLanguage(language);
