@@ -5,6 +5,10 @@ import styles from "./index.module.scss";
 import type { itemType, resumeItemType } from "../../../utils/type";
 
 function ResumeItem({ item }: { item: resumeItemType }) {
+// ** Function
+const handleNavigate = (url:string) => {
+  window.location.href = url
+}
   return (
     <div className={styles.resume}>
       <h1>{item.header}</h1>
@@ -12,7 +16,11 @@ function ResumeItem({ item }: { item: resumeItemType }) {
         item.list_item.length > 0 &&
         item.list_item.map((i: itemType) => (
           <div key={i.id} className={styles.resume__item}>
-            <h4 className={styles.resume__item__title}>{i.title}</h4>
+            {i.link ? (
+              <h4 className={styles.resume__item__title} style={{cursor: 'pointer'}} onClick={() => handleNavigate(i.link ?? '')} >{i.title}</h4>
+            ) : (
+              <h4 className={styles.resume__item__title}>{i.title}</h4>
+            )}
             <h5>{i.yearStart ? `${i.yearStart} - ${i.yearEnd}` : i.yearEnd}</h5>
 
             <p className={styles.resume__item__content}>
@@ -32,10 +40,12 @@ function ResumeItem({ item }: { item: resumeItemType }) {
             {i.detailsProject && (
               <p className={styles.resume__item__content}>{i.location.title}</p>
             )}
-            {i.tech && <p className={styles.resume__item__content}>
-              <strong>Tech:</strong>
-              {i.tech}
-            </p>}
+            {i.tech && (
+              <p className={styles.resume__item__content}>
+                <strong>Tech:</strong>
+                {i.tech}
+              </p>
+            )}
           </div>
         ))}
     </div>

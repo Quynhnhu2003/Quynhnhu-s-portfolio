@@ -16,7 +16,8 @@ export type itemType = {
     title3?: string;
     address?: string;
   };  
+  tech:string
   position?: string;
   detailsProject?: string;
-  tech:string
+  link?:string;
 };

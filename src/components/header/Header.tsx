@@ -2,7 +2,7 @@
 import styles from "./index.module.scss";
 
 // ** another import
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { buttonLanguage } from "../../utils/type";
 
@@ -22,19 +22,49 @@ const btnLanguage: buttonLanguage[] = [
 function Header() {
   // ** state
   const [click, setClick] = useState<number>(1);
+  const [hideHeader, setHideHeader] = useState(false);
+
+  // ** Hooks
   const { i18n } = useTranslation();
 
   // ** function
   const handleActiveButton = (id: number, language: string) => {
-  console.log('id', id)
-  console.log('language', language)
     if (id) {
       setClick(id);
       i18n.changeLanguage(language);
     }
   };
+
+
+  // ** useEffect
+  useEffect(() => {
+     // 🔥 Detect scroll direction
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // Scroll xuống
+        setHideHeader(true);
+      } else {
+        // Scroll lên
+        setHideHeader(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div className={styles.headerContainer}>
+    <div
+      className={`${styles.headerContainer} ${
+        hideHeader ? styles.hidden : ""
+      }`}
+    >
       {btnLanguage &&
         btnLanguage.map((i) => (
           <button
