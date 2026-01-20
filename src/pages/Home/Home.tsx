@@ -22,7 +22,7 @@ export default function Home() {
         </p>
       </AnimatedSection>
 
-      <AnimatedSection animationType="zoomIn" delay={0.3}>
+      {/* <AnimatedSection animationType="zoomIn" delay={0.3}>
         <a
           className={styles.homeContainer__cv}
           href="/Pham-Nguyen-Quynh-Nhu-TopCV.pdf"
@@ -30,7 +30,7 @@ export default function Home() {
         >
           📄 {t("home.download_cv")}
         </a>
-      </AnimatedSection>
+      </AnimatedSection> */}
     </section>
   );
 }
