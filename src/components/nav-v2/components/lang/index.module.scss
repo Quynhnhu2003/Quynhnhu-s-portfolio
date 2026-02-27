@@ -1,0 +1,25 @@
+.lang {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  gap: 5px;
+  .active {
+    font-weight: 600;
+    color: #020073;
+  }
+  &__btn {
+    color: #3b3b3b;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      font-weight: 600;
+      color: #020073;
+    }
+  }
+}
