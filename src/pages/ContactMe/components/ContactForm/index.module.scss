@@ -47,7 +47,7 @@
       transition: 0.4s;
       border-radius: 3.125rem;
       &:hover {
-        background-color: $accent-purple;
+        background: linear-gradient(45deg, #020073, #5f6bff);
       }
     }
   }

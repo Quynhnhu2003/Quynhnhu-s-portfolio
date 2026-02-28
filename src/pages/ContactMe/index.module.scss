@@ -79,12 +79,37 @@
     justify-content: flex-start;
     cursor: pointer;
     margin: 20px;
-    transition: 200ms ease-in-out;
-    width: 100%;
+    width: fit-content;
+    position: relative;
+    width: 100%!important;
+    transition: 0.3s ease;
+  
     svg {
       height: 34px;
       margin: 10px;
-      transition: 200ms ease-in-out;
+      transition: transform 0.3s ease;
+    }
+  
+    /* underline */
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      height: 2px;
+      width: 25%;
+      background: linear-gradient(90deg, #020073, #5f6bff);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+  
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  
+    &:hover svg {
+      transform: translateX(-4px);
     }
   }
 }
