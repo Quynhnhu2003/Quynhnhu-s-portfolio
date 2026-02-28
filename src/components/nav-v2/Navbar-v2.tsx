@@ -71,24 +71,29 @@ function NavbarV2() {
         alt="Avatar"
       />
 
-<div className={styles.menu__sub}>
-  {navBarItem &&
-    navBarItem.map((i) => {
-      const translatedName = t(i.title);
+      <div className={styles.menu__sub}>
+        {navBarItem &&
+          navBarItem.map((i) => {
+            const translatedName = t(i.title);
 
-      return (
-        <MenuItem
-          key={i.id}
-          icon={i.icon}
-          name={translatedName}
-          onclick={handleActiveItem}
-          isActive={activeItem === translatedName}
-        />
-      );
-    })}
-</div>
+            return (
+              <MenuItem
+                key={i.id}
+                icon={i.icon}
+                name={translatedName}
+                onclick={handleActiveItem}
+                isActive={activeItem === translatedName}
+              />
+            );
+          })}
+        <div className={styles["menu__sub--responsive"]}>
+          <Lang />
+        </div>
+      </div>
 
-      <Lang />
+      <div className={styles.menu__lang}>
+        <Lang />
+      </div>
     </div>
   );
 }

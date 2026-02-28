@@ -5,6 +5,11 @@
   margin-right: auto;
   align-items: center;
   gap: 5px;
+  @media (max-width: 768px) {
+    margin-left: unset;
+    margin-right: unset;
+    width: 100%;
+  }
   .active {
     font-weight: 600;
     color: #020073;
@@ -17,6 +22,9 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
     &:hover {
       font-weight: 600;
       color: #020073;
