@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 function Lang() {
   // ** State
-  const [activeLang, setActiveLang] = useState<string>("vi");
+  const [activeLang, setActiveLang] = useState<string>("en");
 
   // ** Hooks
   const { i18n } = useTranslation();

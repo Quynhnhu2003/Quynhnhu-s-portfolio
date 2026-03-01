@@ -9,7 +9,7 @@ function InformationItem({ information }: { information: informationType }) {
     <div className={styles.item}>
       <div className={styles.item__tilte}>
         <svg
-          fill="#FFA951"
+          fill="black"
           height="12px"
           width="12px"
           version="1.1"

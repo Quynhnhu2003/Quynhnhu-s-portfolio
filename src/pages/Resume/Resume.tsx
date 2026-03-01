@@ -3,8 +3,8 @@ import styles from "./index.module.scss";
 
 // ** Another Import
 import ResumeItem from "./ResumeItem";
-import type { resumeItemType } from "../../utils/type";
 import { useTranslation } from "react-i18next";
+import type { resumeItemType } from "../../utils/type";
 import AnimatedSection from "../../components/Animation/AnimatedSection";
 
 function Resume() {
@@ -18,7 +18,7 @@ function Resume() {
     <section className={styles.resumeContainer} id="resume">
       <div className={styles.resumeContainer__header}>
         <p>{t("resume.title")}</p>
-        <span>{t("resume.bio")}</span>
+        {/* <span>{t("resume.bio")}</span> */}
       </div>
       <AnimatedSection
         animationType="staggerContainer"

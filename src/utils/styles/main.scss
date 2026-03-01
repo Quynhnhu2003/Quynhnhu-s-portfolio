@@ -4,7 +4,6 @@
   // Global styles
   body {
     font-family: "Poppins", sans-serif;
-    background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
     margin: 0;
@@ -12,7 +11,7 @@
   }
 
   a {
-    color: #91c8ff;
+    color: $text-dark;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
@@ -36,7 +35,6 @@
   // Global styles
   body {
     font-family: "Poppins", sans-serif;
-    background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
     margin: 0;
@@ -44,7 +42,7 @@
   }
 
   a {
-    color: #91c8ff;
+    color: $text-dark;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
@@ -68,7 +66,6 @@
   // Global styles
   body {
     font-family: "Poppins", sans-serif;
-    background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
     margin: 0;
@@ -76,7 +73,7 @@
   }
 
   a {
-    color: #91c8ff;
+    color: $text-dark;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
@@ -100,7 +97,6 @@
   // Global styles
   body {
     font-family: "Poppins", sans-serif;
-    background-image: $gradient-bg;
     transition: all 0.3s ease-in-out;
     scroll-behavior: smooth;
     margin: 0;
@@ -108,7 +104,7 @@
   }
 
   a {
-    color: #91c8ff;
+    color: $text-dark;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
@@ -130,7 +126,6 @@
 // Global styles
 body {
   font-family: "Poppins", sans-serif;
-  background-image: $gradient-bg;
   transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
   margin: 0;
@@ -139,7 +134,7 @@ body {
 }
 
 a {
-  color: #91c8ff;
+  color: $text-dark;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;

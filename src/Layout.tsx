@@ -12,6 +12,7 @@ import Skill from "./pages/Skill/Skill";
 import ToastifyProvider from "./components/Toast";
 import NavbarV2 from "./components/nav-v2/Navbar-v2";
 import WorkWithMe from "./components/WorkWithMe";
+import ProgressBar from "./pages/ProgressBar";
 
 function Layout() {
   return (
@@ -33,10 +34,10 @@ function Layout() {
       <WorkWithMe />
       <ToastifyProvider />
       <div className={styles.layoutBody}>
-        <Home />
+        <ProgressBar />
         <About />
-        <Resume />
         <Skill />
+        <Resume />
       </div>
     </Router>
   );

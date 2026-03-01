@@ -1,15 +1,27 @@
 @import "../../utils/styles/colors";
 .resumeContainer {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 4rem);
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  overflow-x: hidden;
+  width: 75%;
+  padding-bottom: 2%;
+  @media (max-width: 1199px) {
+    height: unset;
+    width: 85%;
+    padding-bottom: 5%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 1rem 1rem;
+    height: unset;
+    padding-bottom: 5%;
+  }
   &__header {
     text-align: center;
-    position: relative;
-    width: 80%;
+    width: 100%;
+    padding: 2rem 1rem 3rem;
     p {
       font-size: 32px;
       font-weight: 700;
@@ -22,7 +34,6 @@
         display: block;
         width: 160px;
         height: 1px;
-        background: color-mix(in srgb, var(#272829), transparent 60%);
         left: 0;
         right: 0;
         bottom: 1px;
@@ -34,7 +45,9 @@
         display: block;
         width: 60px;
         height: 3px;
-        background: $accent-orange;
+        background: linear-gradient(137deg, #ffffff, #b8ceff, #004fff, #ffffff);
+        background-size: 240% 240%;
+        animation: gradient-animation 5s ease infinite;
         left: 0;
         right: 0;
         bottom: 0;
@@ -42,11 +55,11 @@
       }
     }
     span {
-      display: flex;
-      justify-content: center;
-      width: 100%;
+      display: block;
+      max-width: 800px;
+      margin: 0 auto;
       color: #272829;
-      line-height: 1.5rem;
+      line-height: 1.6;
       text-align: justify;
     }
   }
@@ -55,14 +68,26 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     @media (min-width: 501px) and (max-width: 1100px) {
+      width: 80%;
       grid-template-columns: unset;
     }
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 90%;
     }
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
