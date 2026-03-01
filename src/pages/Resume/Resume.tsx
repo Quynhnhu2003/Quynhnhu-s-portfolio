@@ -15,7 +15,7 @@ function Resume() {
   }) as resumeItemType[];
 
   return (
-    <section className={styles.resumeContainer} id="resume">
+    <section className={styles.resumeContainer} id="project">
       <div className={styles.resumeContainer__header}>
         <p>{t("resume.title")}</p>
         {/* <span>{t("resume.bio")}</span> */}

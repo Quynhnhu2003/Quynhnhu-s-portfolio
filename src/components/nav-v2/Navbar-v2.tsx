@@ -2,7 +2,7 @@
 import styles from "./index.module.scss";
 
 // ** another import
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { navBarItem } from "../../utils/data/navbarMenu";
 
@@ -25,6 +25,36 @@ function NavbarV2() {
     setActiveItem(name);
   };
 
+  // ** usseEffect
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveItem(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-40% 0px -50% 0px",
+        threshold: 0,
+      }
+    );
+  
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <div className={`${styles.menu} ${styles.menuh}`}>
       <img
@@ -42,10 +72,10 @@ function NavbarV2() {
               <MenuItem
                 key={i.id}
                 icon={i.icon}
+                id={i.id}
                 name={translatedName}
                 onclick={handleActiveItem}
-                isActive={activeItem === translatedName}
-              />
+                isActive={activeItem === i.id}              />
             );
           })}
         <div className={styles["menu__sub--downloadRes"]}>

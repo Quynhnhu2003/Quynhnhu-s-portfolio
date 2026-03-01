@@ -1,5 +1,10 @@
 @import "./variables";
 // Small devices (landscape phones, 576px and up)
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 300px) {
   // Global styles
   body {
