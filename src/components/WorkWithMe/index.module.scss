@@ -1,6 +1,6 @@
 .contact {
   &__btnWork {
-    top: 5%;
+    top: 2%;
     right: 5%;
     opacity: 0;
     height: 8%;
@@ -15,7 +15,6 @@
     background-color: #020073;
     transition: 200ms ease-in-out;
     @media (max-width: 1024px) {
-      top: 5%;
       right: 5%;
       height: 70px;
       padding: 5px 18px;

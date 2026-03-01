@@ -8,7 +8,7 @@
   max-width: 1400px;
   @media (max-width: 1024px) {
     min-height: 65vh;
-    width: 85%;
+    width: 90%;
   }
   @media (max-width: 767px) {
     width: 100%;
@@ -71,11 +71,10 @@
   }
 
   &__content {
-
     gap: 2rem;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-
+    max-width: 800px;
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
       gap: 1.75rem;
