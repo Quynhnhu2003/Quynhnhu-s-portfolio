@@ -6,7 +6,7 @@ function DownloadCV() {
     <a
       className={styles.downloadCV}
       href="https://drive.google.com/uc?export=download&id=1o9GRM6zXbhBOuZCQoV6tBnEUQp4BqbHq"
-      download="CV-Nhu-Pham.pdf"
+      download="PhamNguyenQuynhNhu-CV.pdf"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
