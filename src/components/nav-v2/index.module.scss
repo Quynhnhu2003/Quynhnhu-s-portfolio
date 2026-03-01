@@ -38,6 +38,16 @@
       display: none;
     }
   }
+  &__indicator {
+    position: absolute;
+    left: 0;
+    width: 4px;
+    background: #020073;
+    border-radius: 4px;
+    transition: 
+      top 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+      height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
   &__sub {
     margin: 20% auto;
     width: 230px;
@@ -45,6 +55,7 @@
     rotate: none;
     scale: none;
     transform: translate3d(0px, 0px, 0px);
+    position: relative;
     @media (max-width: 1024px) {
       width: 80px;
       height: 30%;
