@@ -1,11 +1,26 @@
 .leftContainer {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    display: block;
+    width: 90%;
+  }
   img {
     width: 100%;
     height: auto;
     max-width: 200px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      width: 95%;
+    }
+    @media (max-width: 767px) {
+      max-width: 150px;
+    }
   }
 
 }

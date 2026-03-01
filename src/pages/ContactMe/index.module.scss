@@ -1,14 +1,17 @@
 @import "../../utils/styles/colors";
 
 .contactContainer {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(85% - 4rem);
-  @media (min-width: 501px) and (max-width: 850px) {
-    width: calc(85% - 12rem);
+  width: 100%;
+  background-color: #f6f9f7;
+  @media (max-width: 768px) {
+    width: 95%;
+    justify-content: start;
+    padding: 0 8px;
   }
   &__header {
     text-align: center;
@@ -57,8 +60,8 @@
     }
   }
   &__content {
-    display: grid;
-    grid-template-columns: 3fr 7fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     width: 100%;
     @media (min-width: 501px) and (max-width: 1100px) {
@@ -68,6 +71,45 @@
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;
+    }
+  }
+  &__returnBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin: 20px;
+    width: fit-content;
+    position: relative;
+    width: 100%!important;
+    transition: 0.3s ease;
+  
+    svg {
+      height: 34px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+  
+    /* underline */
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      height: 2px;
+      width: 25%;
+      background: linear-gradient(90deg, #020073, #5f6bff);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+  
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  
+    &:hover svg {
+      transform: translateX(-4px);
     }
   }
 }

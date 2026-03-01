@@ -28,7 +28,7 @@ function ContactInfor({ contactList }: { contactList: contactInforType[] }) {
                   rel="noopener noreferrer"
                   style={
                     (contact.title === "Address" || contact.title === "Địa chỉ")
-                      ? { padding: '0 0.5rem' }
+                      ? { padding: '0.5rem 0' }
                       : {}
                   }
                   
@@ -114,7 +114,7 @@ function ContactInfor({ contactList }: { contactList: contactInforType[] }) {
                   )}
                 </a>
                 <div className={styles.infor__item__content}>
-                  <h3>{contact.title}</h3>
+                  {/* <h3>{contact.title}</h3> */}
                   <p>{contact.content}</p>
                 </div>
               </div>

@@ -8,7 +8,7 @@
   h1 {
     margin: 24px 0 0;
     text-transform: uppercase;
-    color: $primary-dark;
+    color: #020073;
   }
   &__item {
     padding: 0 0 20px 20px;
@@ -39,8 +39,7 @@
       border-radius: 50px;
       left: -10px;
       top: 0;
-      background: $accent-purple;
-      border: 2px solid $primary-dark;
+      background: #020073;
     }
     &__content {
       display: flex;

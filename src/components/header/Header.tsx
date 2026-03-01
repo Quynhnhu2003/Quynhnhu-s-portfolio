@@ -4,20 +4,7 @@ import styles from "./index.module.scss";
 // ** another import
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { buttonLanguage } from "../../utils/type";
-
-const btnLanguage: buttonLanguage[] = [
-  {
-    id: 1,
-    title: "EN",
-    language: "en",
-  },
-  {
-    id: 2,
-    title: "VN",
-    language: "vi",
-  },
-];
+import { btnLanguage } from "../../utils/data/btnLanguage";
 
 function Header() {
   // ** state
@@ -34,7 +21,6 @@ function Header() {
       i18n.changeLanguage(language);
     }
   };
-
 
   // ** useEffect
   useEffect(() => {

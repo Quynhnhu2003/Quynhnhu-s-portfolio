@@ -1,77 +1,101 @@
 @import "../../utils/styles/colors";
 .aboutContainer {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 4rem);
-  @media (min-width: 501px) and (max-width: 850px) {
-    width: calc(100% - 12rem);
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  width: 80%;
+  max-width: 1400px;
+  @media (max-width: 1024px) {
+    min-height: 65vh;
+    width: 90%;
   }
-  @media (max-width: 500px) {
-    width: calc(100% - 2rem);
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 1rem 1rem;
   }
   &__header {
     text-align: center;
-    padding-bottom: 60px;
-    position: relative;
-    width: 80%;
-    padding: 1rem;
+    width: 100%;
+    padding: 2rem 1rem 3rem;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      width: 95%;
+    }
+
+    @media (max-width: 767px) {
+      gap: 1.25rem;
+      width: 85%;
+    }
+
     p {
-      font-size: 32px;
+      font-size: clamp(22px, 3vw, 32px);
       font-weight: 700;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
+      margin-bottom: 1rem;
+      padding-bottom: 1.5rem;
       position: relative;
-      &:before {
+
+      &::before {
         content: "";
         position: absolute;
-        display: block;
-        width: 160px;
+        width: 0px;
         height: 1px;
-        // background: rgba(0, 0, 0, 0.3); // hoặc dùng một màu cụ thể
-        background: color-mix(in srgb, var(#272829), transparent 60%);
-        left: 0;
-        right: 0;
-        bottom: 1px;
-        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4px;
       }
+
       &::after {
         content: "";
         position: absolute;
-        display: block;
         width: 60px;
         height: 3px;
-        background: $accent-orange;
-        left: 0;
-        right: 0;
+        background: linear-gradient(137deg, #ffffff, #b8ceff, #004fff, #ffffff);
+        background-size: 240% 240%;
+        animation: gradient-animation 5s ease infinite;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 0;
-        margin: auto;
       }
     }
+
     span {
-      display: flex;
-      justify-content: center;
-      width: 100%;
+      display: block;
+      max-width: 800px;
+      margin: 0 auto;
       color: #272829;
-      line-height: 1.5rem;
+      line-height: 1.6;
       text-align: justify;
     }
   }
+
   &__content {
-    display: grid;
-    grid-template-columns: 3fr 7fr;
     gap: 2rem;
-    width: 90%;
-    @media (min-width: 501px) and (max-width: 1100px) {
-      width: 85%;
-      grid-template-columns: unset;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      width: 95%;
     }
-    @media (max-width: 500px) {
-      display: flex;
-      flex-direction: column;
+
+    @media (max-width: 767px) {
+      gap: 1.25rem;
       width: 100%;
     }
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

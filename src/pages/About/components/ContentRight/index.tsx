@@ -9,7 +9,7 @@ import AnimatedSection from "../../../../components/Animation/AnimatedSection";
 function ContentRight({ information }: { information: informationType[] }) {
   return (
     <div className={styles.rightContainer}>
-      <h1>Frontend Developer</h1>
+      {/* <h1>Frontend Developer</h1> */}
       <AnimatedSection animationType="staggerContainer" className={styles.rightContainer__informationList}>
         {information &&
           information.map((item: informationType, index:number) => (

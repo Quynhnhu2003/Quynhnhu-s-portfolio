@@ -1,10 +1,8 @@
 {
   "navbar": {
-    "home": "Home",
-    "about": "About",
-    "resume": "Resume",
-    "skill": "Skill",
-    "contact": "Contact"
+    "about": "About Me",
+    "project": "Project",
+    "skill": "Skill"
   },
   "home": {
     "greeting": "Phạm Nguyễn Quỳnh Như",
