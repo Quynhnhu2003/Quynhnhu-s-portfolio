@@ -1,12 +1,13 @@
 // ** Styles Import
 import styles from "./index.module.scss";
 
-// ** Another Import
-import cvFile from "./PhamNguyenQuynhNhu-CV.pdf";
-
 function DownloadCV() {
   return (
-    <a className={styles.downloadCV} href={cvFile} download="CV-Nhu-Pham.pdf">
+    <a
+      className={styles.downloadCV}
+      href="https://drive.google.com/uc?export=download&id=1o9GRM6zXbhBOuZCQoV6tBnEUQp4BqbHq"
+      download="CV-Nhu-Pham.pdf"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         id="Layer_1"
