@@ -11,7 +11,6 @@ import ToastifyProvider from "./components/Toast";
 import ProgressBar from "./pages/ProgressBar";
 import About from "./pages/About/About";
 import SkillsV2 from "./pages/SkillsV2/Skill";
-import WorkExperience from "./pages/WorkExperience";
 import Resume from "./pages/Resume/Resume";
 
 function Layout() {
@@ -37,7 +36,7 @@ function Layout() {
         <ProgressBar />
         <About />
         <SkillsV2 />
-        <WorkExperience />
+        {/* <WorkExperience /> */}
         <Resume />
       </div>
     </Router>
