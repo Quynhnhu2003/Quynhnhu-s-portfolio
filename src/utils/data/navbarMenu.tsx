@@ -42,12 +42,12 @@ export const navBarItem: navItemType[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         fill="#000000"
         version="1.1"
         id="Layer_1"
         viewBox="0 0 32 32"
-        xml:space="preserve"
+        xmlSpace="preserve"
       >
         <path
           id="user--experience-design_1_"
