@@ -1,7 +1,7 @@
 .item {
   width: 100%;
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 125px 1fr;
   align-items: start;
   gap: 1rem;
   &__tilte {
@@ -12,6 +12,7 @@
       margin: 0;
       font-size: 1rem;
       font-weight: 700;
+      width: 100%;
     }
   }
 }
