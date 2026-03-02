@@ -17,7 +17,6 @@ function NavbarV2() {
 
   // ** Hooks
   const { t } = useTranslation();
-  const indicatorRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
 
   // ** usseEffect
@@ -44,19 +43,6 @@ function NavbarV2() {
     return () => observer.disconnect();
   }, []);
 
-  // Indicator animation
-  useEffect(() => {
-    const currentItem = itemRefs.current[activeItem];
-    const indicator = indicatorRef.current;
-
-    if (currentItem && indicator) {
-      const { offsetTop, offsetHeight } = currentItem;
-
-      indicator.style.top = `${offsetTop}px`;
-      indicator.style.height = `${offsetHeight}px`;
-    }
-  }, [activeItem]);
-
   return (
     <div className={`${styles.menu} ${styles.menuh}`}>
       <img
@@ -64,8 +50,6 @@ function NavbarV2() {
         src="https://res.cloudinary.com/dwcg5odh2/image/upload/v1760165778/quynhnhu_avatar_lew4p9.jpg"
         alt="Avatar"
       />
-
-      <div ref={indicatorRef} className={styles.menu__indicator} />
 
       <div className={styles.menu__sub}>
         {navBarItem &&

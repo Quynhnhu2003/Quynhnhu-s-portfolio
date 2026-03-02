@@ -5,14 +5,14 @@ import styles from "./layout.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // ** Component import
-import About from "./pages/About/About";
-import Resume from "./pages/Resume/Resume";
-import ToastifyProvider from "./components/Toast";
 import NavbarV2 from "./components/nav-v2/Navbar-v2";
 import WorkWithMe from "./components/WorkWithMe";
+import ToastifyProvider from "./components/Toast";
 import ProgressBar from "./pages/ProgressBar";
-import WorkExperience from "./pages/WorkExperience";
+import About from "./pages/About/About";
 import SkillsV2 from "./pages/SkillsV2/Skill";
+import WorkExperience from "./pages/WorkExperience";
+import Resume from "./pages/Resume/Resume";
 
 function Layout() {
   return (
