@@ -1,11 +1,13 @@
 // ** Styles Import
 import styles from "./index.module.scss";
 
+// ** Components Import
+import SkillItem from "./components/SkillItem";
+import AnimatedSection from "../../components/Animation/AnimatedSection";
+
 // ** Another Import
 import { useTranslation } from "react-i18next";
-import SkillItem from "./SkillItem";
 import type { skillItemType } from "../../utils/type";
-import AnimatedSection from "../../components/Animation/AnimatedSection";
 
 function Skill() {
   const { t } = useTranslation();

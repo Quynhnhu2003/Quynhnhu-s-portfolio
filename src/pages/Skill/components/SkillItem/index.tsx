@@ -2,7 +2,7 @@
 import styles from "./index.module.scss";
 
 // ** Another Import
-import type { skillItemType } from "../../../utils/type";
+import type { skillItemType } from "../../../../utils/type";
 
 function SkillItem({ item }: { item: skillItemType }) {
   return (

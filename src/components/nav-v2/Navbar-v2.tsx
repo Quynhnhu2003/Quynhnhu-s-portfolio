@@ -2,8 +2,8 @@
 import styles from "./index.module.scss";
 
 // ** another import
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useEffect, useRef, useState } from "react";
 import { navBarItem } from "../../utils/data/navbarMenu";
 
 // ** Components Import
@@ -17,18 +17,13 @@ function NavbarV2() {
 
   // ** Hooks
   const { t } = useTranslation();
-
-  // ** Function
-  const handleActiveItem = (name: string) => {
-    if (!name) return;
-
-    setActiveItem(name);
-  };
+  const indicatorRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
 
   // ** usseEffect
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,21 +34,28 @@ function NavbarV2() {
       },
       {
         root: null,
-        rootMargin: "-40% 0px -50% 0px",
+        rootMargin: "-40% 0px -55% 0px",
         threshold: 0,
       }
     );
-  
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-  
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
   }, []);
+
+  // Indicator animation
+  useEffect(() => {
+    const currentItem = itemRefs.current[activeItem];
+    const indicator = indicatorRef.current;
+
+    if (currentItem && indicator) {
+      const { offsetTop, offsetHeight } = currentItem;
+
+      indicator.style.top = `${offsetTop}px`;
+      indicator.style.height = `${offsetHeight}px`;
+    }
+  }, [activeItem]);
 
   return (
     <div className={`${styles.menu} ${styles.menuh}`}>
@@ -62,6 +64,8 @@ function NavbarV2() {
         src="https://res.cloudinary.com/dwcg5odh2/image/upload/v1760165778/quynhnhu_avatar_lew4p9.jpg"
         alt="Avatar"
       />
+
+      <div ref={indicatorRef} className={styles.menu__indicator} />
 
       <div className={styles.menu__sub}>
         {navBarItem &&
@@ -74,8 +78,9 @@ function NavbarV2() {
                 icon={i.icon}
                 id={i.id}
                 name={translatedName}
-                onclick={handleActiveItem}
-                isActive={activeItem === i.id}              />
+                isActive={activeItem === i.id}
+                setRef={(el:any) => (itemRefs.current[i.id] = el)}
+              />
             );
           })}
         <div className={styles["menu__sub--downloadRes"]}>

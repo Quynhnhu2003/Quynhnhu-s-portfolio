@@ -2,7 +2,8 @@
   "navbar": {
     "about": "Giới thiệu",
     "project": "Dự án",
-    "skill": "Kỹ năng"
+    "skill": "Kỹ năng",
+    "experience": "Kinh nghiệm"
   },
   "home": {
     "greeting": "Phạm Nguyễn Quỳnh Như",
@@ -11,7 +12,7 @@
   },
   "about": {
     "title": "Giới thiệu bản thân",
-    "bio": "Thực tập sinh Frontend Developer với kinh nghiệm thực tế trong việc xây dựng các ứng dụng web có khả năng mở rộng bằng ReactJS (TypeScript) và Angular trong môi trường Agile. Thành thạo kiến trúc hướng component, tối ưu hiệu suất giao diện và thiết kế responsive. Mục tiêu phát triển chuyên môn nâng cao về front-end thông qua các dự án thực tiễn, với định hướng rõ ràng trở thành Full-Stack Developer hỗ trợ các nền tảng SaaS quy mô lớn.",
+    "bio": "Lập trình viên Frontend có kinh nghiệm thực tế trong việc xây dựng các ứng dụng web có khả năng mở rộng bằng ReactJS (TypeScript) và Angular trong môi trường làm việc theo Agile. Thành thạo kiến trúc hướng component, tối ưu hiệu năng giao diện và thiết kế responsive. Mong muốn nâng cao chuyên môn phát triển frontend thông qua các dự án thực tế, với mục tiêu rõ ràng là phát triển lên vị trí Fullstack Developer và tham gia xây dựng các nền tảng SaaS quy mô lớn.",
     "information": [
       {
         "id": 1,
@@ -47,6 +48,31 @@
         "id": 7,
         "title": "Freelance",
         "content": "Sẵn sàng nhận việc"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Kỹ năng công việc",
+    "listExperience": [
+      {
+        "id": "experience001",
+        "header": "Công ty cổ phần Viễn thông FPT - FPT Telecom",
+        "position": "Thực tập sinh Frontend Developer",
+        "time": "01/2025 - 12/2025",
+        "list_item": [
+          {
+            "id": "item01",
+            "content": "Đóng góp vào việc phát triển 3 hệ thống nội bộ cấp doanh nghiệp bằng ReactJS (TypeScript) và Angular trong môi trường Agile Scrum, cải thiện hiệu quả quy trình làm việc và mức độ hài lòng của người dùng thông qua việc nâng cao hiệu suất giao diện và xây dựng kiến trúc component tái sử dụng."
+          },
+          {
+            "id": "item02",
+            "content": "Xây dựng hơn 12 component tái sử dụng, tối ưu hóa quá trình render giúp tăng 25% tốc độ tải trang và phối hợp với đội backend trong việc tích hợp RESTful API."
+          },
+          {
+            "id": "item03",
+            "content": "Áp dụng Git flow, quy trình review code và các best practice kiểm thử trong quá trình phát triển SaaS thực tế."
+          }
+        ]
       }
     ]
   },
@@ -86,7 +112,7 @@
         "list_item": [
           {
             "id": "project03",
-            "title": "Landing Page(Dự án cá nhân)",
+            "title": "Landing Page",
             "yearStart": "11/2025",
             "yearEnd": "12/2025",
             "link": "https://landing-page-amacrmplj-quynhnhu2003s-projects.vercel.app/",
@@ -100,7 +126,7 @@
           },
           {
             "id": "project04",
-            "title": "React UI Kit (Dự án cá nhân)",
+            "title": "React UI Kit",
             "yearStart": "05/12/2025",
             "yearEnd": "Tương lai",
             "link": "https://react-ui-kits.netlify.app/",
@@ -114,19 +140,6 @@
           },          
           {
             "id": "project01",
-            "title": "Dự án Nội Bộ – Chương Trình Technology Apprenticeship (01/2025)",
-            "yearStart": "01/2025",
-            "yearEnd": "12/2025",
-            "location": {
-              "title1": "Đóng góp vào việc phát triển 3 hệ thống nội bộ cấp doanh nghiệp bằng ReactJS (TypeScript) và Angular trong môi trường Agile Scrum, cải thiện hiệu quả quy trình làm việc và mức độ hài lòng của người dùng thông qua việc nâng cao hiệu suất giao diện và xây dựng kiến trúc component tái sử dụng.",
-              "title2": "Xây dựng hơn 12 component tái sử dụng, tối ưu hóa quá trình render giúp tăng 25% tốc độ tải trang và phối hợp với đội backend trong việc tích hợp RESTful API.",
-              "title3": "Áp dụng Git flow, quy trình review code và các best practice kiểm thử trong quá trình phát triển SaaS thực tế."
-            },
-            "tech": "ReactJS, TypeScript, Angular, REST API, GitLab, WebSocket, SignalR",
-            "position": "Frontend Developer Intern"
-          },
-          {
-            "id": "project02",
             "title": "Website Tạp Chí Trường Đại Học",
             "yearStart": "01/2024",
             "yearEnd": "04/2024",
