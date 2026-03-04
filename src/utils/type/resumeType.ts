@@ -9,6 +9,7 @@ export type itemType = {
   title: string;
   yearStart: string;
   yearEnd: string;
+  git?:string;
   location: {
     title?: string;
     title1?: string;

@@ -81,14 +81,34 @@
         ]
       },
       {
+        "id": "resume001",
+        "header": "Kinh nghiệm làm việc",
+        "list_item": [
+          {
+            "id": "experience01",
+            "title": "FPT Telecom – Sinh viên Công nghệ tập sự",
+            "yearStart": "01/2025",
+            "yearEnd": "12/2025",
+            "location": {
+              "title1": "Đóng góp vào việc phát triển 3 hệ thống nội bộ cấp doanh nghiệp bằng ReactJS (TypeScript) và Angular trong môi trường Agile Scrum, cải thiện hiệu quả quy trình làm việc và mức độ hài lòng của người dùng thông qua việc nâng cao hiệu suất giao diện và xây dựng kiến trúc component tái sử dụng.",
+              "title2": "Xây dựng hơn 12 component tái sử dụng, tối ưu hóa quá trình render giúp tăng 25% tốc độ tải trang và phối hợp với đội backend trong việc tích hợp RESTful API.",
+              "title3": "Áp dụng Git flow, quy trình review code và các best practice kiểm thử trong quá trình phát triển SaaS thực tế."
+            },
+            "tech": "ReactJS, TypeScript, Angular, REST API, GitLab, WebSocket, SignalR",
+            "position": "Frontend Developer Intern"
+          }
+        ]
+      },
+      {
         "id": "resume002",
         "header": "Kinh nghiệm chuyên môn",
         "list_item": [
           {
             "id": "project03",
-            "title": "Landing Page(Dự án cá nhân)",
+            "title": "Landing Page",
             "yearStart": "11/2025",
             "yearEnd": "12/2025",
+            "git": "https://github.com/Quynhnhu2003/zootopia-kids-landing.git",
             "link": "https://landing-page-amacrmplj-quynhnhu2003s-projects.vercel.app/",
             "location": {
               "title1": "Thiết kế và phát triển landing page tương tác cao cho sản phẩm giáo dục, tập trung vào trải nghiệm người dùng cao cấp, animation mượt mà và giao diện responsive trên nhiều thiết bị.",
@@ -100,9 +120,10 @@
           },
           {
             "id": "project04",
-            "title": "React UI Kit (Dự án cá nhân)",
+            "title": "React UI Kit",
             "yearStart": "05/12/2025",
             "yearEnd": "Tương lai",
+            "git": "https://github.com/Quynhnhu2003/React-UI-Kit.git",
             "link": "https://react-ui-kits.netlify.app/",
             "location": {
               "title1": "Thiết kế và xây dựng một bộ React UI Kit có khả năng tái sử dụng cao, tập trung vào tính mở rộng, sự nhất quán giao diện và API thân thiện cho lập trình viên trong các dự án thực tế.",
@@ -112,19 +133,6 @@
             "tech": "ReactJS, TypeScript, Tailwind CSS, Vite, QR Code Library",
             "position": "Frontend Developer"
           },          
-          {
-            "id": "project01",
-            "title": "Dự án Nội Bộ – Chương Trình Technology Apprenticeship (01/2025)",
-            "yearStart": "01/2025",
-            "yearEnd": "12/2025",
-            "location": {
-              "title1": "Đóng góp vào việc phát triển 3 hệ thống nội bộ cấp doanh nghiệp bằng ReactJS (TypeScript) và Angular trong môi trường Agile Scrum, cải thiện hiệu quả quy trình làm việc và mức độ hài lòng của người dùng thông qua việc nâng cao hiệu suất giao diện và xây dựng kiến trúc component tái sử dụng.",
-              "title2": "Xây dựng hơn 12 component tái sử dụng, tối ưu hóa quá trình render giúp tăng 25% tốc độ tải trang và phối hợp với đội backend trong việc tích hợp RESTful API.",
-              "title3": "Áp dụng Git flow, quy trình review code và các best practice kiểm thử trong quá trình phát triển SaaS thực tế."
-            },
-            "tech": "ReactJS, TypeScript, Angular, REST API, GitLab, WebSocket, SignalR",
-            "position": "Frontend Developer Intern"
-          },
           {
             "id": "project02",
             "title": "Website Tạp Chí Trường Đại Học",
