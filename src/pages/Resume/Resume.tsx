@@ -2,7 +2,7 @@
 import styles from "./index.module.scss";
 
 // ** Another Import
-import ResumeItem from "./ResumeItem";
+import ResumeItem from "./components/ResumeItem";
 import { useTranslation } from "react-i18next";
 import type { resumeItemType } from "../../utils/type";
 import AnimatedSection from "../../components/Animation/AnimatedSection";

@@ -1,0 +1,76 @@
+@import "../../../../utils/styles/colors";
+
+.item {
+  position: relative;
+  padding: 0 0 20px 20px;
+  border-left: 2px solid $primary-dark;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -10px;
+    top: 0;
+    border-radius: 50%;
+    background: #020073;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  a {
+    width: 100%;
+    display: block;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__address {
+    opacity: 0.8;
+  }
+}
+
+
+.clickable {
+  cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(90deg, #020073, #5f6bff);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+}

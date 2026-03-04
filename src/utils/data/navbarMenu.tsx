@@ -37,7 +37,7 @@ export const navBarItem: navItemType[] = [
     ),
   },
   {
-    id: "project",
+    id: "resume",
     title: "navbar.project",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 53" fill="none">
